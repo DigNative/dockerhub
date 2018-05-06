@@ -148,4 +148,6 @@ tlmgr repository add https://tools.rene-schwarz.com/texlive-repo/${TL_VERSION} D
 tlmgr pinning add DigNative acrotex
 tlmgr install acrotex
 
+rm -fR /usr/local/texlive/current/texmf-dist/doc
+
 exit 0
