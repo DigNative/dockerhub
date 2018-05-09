@@ -9,7 +9,8 @@ RUN apt-get update && apt-get -y install \
     perl \
     wget \
     git \
-    subversion
+    subversion \
+    libfontconfig
 
 ADD install_texlive.sh /root/
 RUN chmod +x /root/install_texlive.sh
