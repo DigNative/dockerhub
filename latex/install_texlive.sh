@@ -80,7 +80,7 @@ cd texlive-$TL_VERSION-$INSTALLER_VER
 
 # create texlive.profile file
 cat > texlive.profile << EOF
-selected_scheme scheme-basic
+selected_scheme scheme-full
 TEXDIR /usr/local/texlive/${TL_VERSION}
 TEXMFCONFIG ~/.texlive${TL_VERSION}/texmf-config
 TEXMFHOME ~/texmf
@@ -148,7 +148,7 @@ tlmgr repository add https://tools.rene-schwarz.com/texlive-repo/${TL_VERSION} D
 tlmgr pinning add DigNative acrotex
 tlmgr install acrotex
 
-/usr/local/texlive/current/bin/x86_64-linux/luaotfload-tool --update
+luaotfload-tool --update
 
 rm -fR /usr/local/texlive/current/texmf-dist/doc
 
