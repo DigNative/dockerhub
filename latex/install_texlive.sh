@@ -148,7 +148,7 @@ tlmgr repository add https://tools.rene-schwarz.com/texlive-repo/${TL_VERSION} D
 tlmgr pinning add DigNative acrotex
 tlmgr install acrotex
 
-luaotfload-tool --update
+/usr/local/texlive/current/bin/x86_64-linux/luaotfload-tool --update
 
 rm -fR /usr/local/texlive/current/texmf-dist/doc
 
